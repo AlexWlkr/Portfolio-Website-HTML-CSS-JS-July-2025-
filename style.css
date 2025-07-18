@@ -305,7 +305,7 @@ position: relative;
     margin: auto 0;
 }
 
-/* EXPERIENCE */
+/* EXPERIENCE SECTION */
 
 #experience {
     position: relative;
@@ -344,3 +344,5 @@ article {
 article .icon {
     cursor: default;
 }
+
+/* PROJECTS SECTION */
