@@ -6,6 +6,9 @@
     .about-containers{
         flex-wrap: wrap;
     }
+    #contact, #projects {
+        height: fit-content;
+    }
 }
 @media screen and (max-width: 1200px) {
     #desktop-nav {
@@ -38,6 +41,103 @@ margin-top: 2rem;
         margin-top: 0;
     }
 }
+@media screen and (max-width: 768px) {
+  section {
+    margin: 0 1.5rem;
+    padding-top: 4vh;
+    height: fit-content;
+  }
+
+  .section-container {
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+  }
+
+  .section__pic-container {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  #profile {
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 3rem;
+  }
+
+  .section__text {
+    text-align: center;
+  }
+
+  .btn-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 0;
+  }
+  .experience-details-container {
+    align-items: center;
+  }
+
+  .article-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .color-container {
+    margin-bottom: 2rem;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .contact-info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .logo {
+    font-size: 1.75rem;
+  }
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact {
+  margin-bottom: 5rem; /* or more if needed */
+}
+}
 
 @media screen and (max-width: 600px) {
     #contact, footer {
@@ -54,7 +154,7 @@ footer  nav{
     height: fit-content;
     margin-bottom: 2rem;
 }
-.about-containersm, .contact-info-upper-container, .btn-container{
+.about-containers, .contact-info-upper-container, .btn-container{
 flex-wrap: wrap;
 }
 .contact-info-container {
@@ -87,5 +187,23 @@ flex-wrap: wrap;
 }
 .text-container {
     text-align: justify;
+}
+.article-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.experience-details-container {
+  align-items: center;
 }
 }
