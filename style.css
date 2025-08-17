@@ -186,6 +186,10 @@ min-height: fit-content;
     margin-bottom:  1rem;
 }
 
+.blurb_text {
+    padding-bottom: 1rem;
+}
+
 .title {
     font-size: 3rem;
     text-align: center;
