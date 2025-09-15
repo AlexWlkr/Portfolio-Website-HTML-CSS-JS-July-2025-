@@ -8,8 +8,10 @@
    <link rel="stylesheet" href="mediaqueries.css"> 
     </head>
     <body>
-        <nav id="desktop-nav">
-           <div class="logo"> Alexandria Walker</div>
+      <a class="skip-link" href="#main-content">Skip to main content</a>
+      <header id="top" class="site-header"></header>
+        <nav id="desktop-nav" aria-label="Primary">
+           <div class="logo" href="#top" aria-label="Home"> Alexandria Walker</div>
          <div>
              <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -19,8 +21,8 @@
               </ul>
             </div>
         </nav>
-        <nav id="hamburger-nav">
-              <div class="logo"> Alexandria Walker</div>
+        <nav id="hamburger-nav" aria-label="Primary (mobile)">
+              <div class="logo" href="#top" aria-label="Home"> Alexandria Walker</div>
                  <div class="hamburger-menu"> 
                     <div class="hamburger-icon" onclick="toggleMenu()">
                         <span></span>
@@ -35,6 +37,8 @@
                     </ul>
                  </div>
         </nav>
+          </header>
+           <main id="main-content">
      <section id="profile">
         <div class="section__pic-container">
     <img src="./assets/profile-pic.png" alt = "Alexandria Walker Profile Picture">
@@ -296,8 +300,9 @@
     </div>
 </div>
     </section>
+    </main>
     <footer>
-        <nav>
+        <nav aria-label="Footer">
             <div class="nav-links-container">
                   <ul class="nav-links">
                 <li><a href="#about">About</a></li>
