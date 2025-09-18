@@ -266,10 +266,10 @@ section {
 
 /* BUTTONS */
 .btn {
-  display: inline-flex;          /* makes width/height reliable */
-  align-items: center;           /* vertical center */
-  justify-content: center;       /* horizontal center */
-  line-height: 1;                /* prevents tall line box */
+  display: inline-flex;          
+  align-items: center;           
+  justify-content: center;       
+  line-height: 1;               
   box-sizing: border-box;
 
   font-weight: 600;
@@ -282,7 +282,7 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
-  align-items: center;           /* keep siblings aligned */
+  align-items: center;          
   gap: 1rem;
 }
 
