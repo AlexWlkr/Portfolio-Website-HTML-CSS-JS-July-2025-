@@ -265,18 +265,25 @@ section {
 }
 
 /* BUTTONS */
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
 .btn {
+  display: inline-flex;          /* makes width/height reliable */
+  align-items: center;           /* vertical center */
+  justify-content: center;       /* horizontal center */
+  line-height: 1;                /* prevents tall line box */
+  box-sizing: border-box;
+
   font-weight: 600;
-  transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  transition: all 300ms ease;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;           /* keep siblings aligned */
+  gap: 1rem;
 }
 
 .btn-color-1,
